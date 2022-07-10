@@ -1,10 +1,17 @@
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 import Card from "../UI/Card";
+import ExpensesFilter from "./ExpenseFilter";
 
 function Expenses (props) {
+  const onSelectedFilterDateHandler = (selectedFilterDate) => {
+    console.log('expenses here');
+    console.log(selectedFilterDate);
+  }
     return (
-      <Card className ="expenses">
+      <div>
+        <ExpensesFilter selectFilterDate = {onSelectedFilterDateHandler} />
+        <Card className ="expenses">
             <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
@@ -26,6 +33,8 @@ function Expenses (props) {
         date={props.items[3].date}
       />
       </Card>
+      </div>
+      
         
     );
 }
