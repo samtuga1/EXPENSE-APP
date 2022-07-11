@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Expenses from "../src/components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
-  const expenses = [
+  const expensesList = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -23,18 +24,17 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  const [expenses, setInitialExpenses] = useState(expensesList);
   const addNewExpenseHandler = (expense) => {
-    // expenses.push(
-    //   {
-    //     ...expense,
-    //   }
-    //)
-    console.log('in app js');
-    console.log(expense);
+    setInitialExpenses((prevExpenses) => [
+      expense,
+      ...prevExpenses,
+    ]
+    );
   }
   return (
     <div>
-      <NewExpense NewExpense = {addNewExpenseHandler} />
+      <NewExpense newExpense = {addNewExpenseHandler} />
       <Expenses items={expenses}/>
     </div>
   );
