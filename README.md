@@ -1,6 +1,6 @@
 # EXPENSE-APP
 
-This is an expense app I built with React.js
+This is an expense app I built with React
 
 ![2](https://user-images.githubusercontent.com/79772304/178369842-38c967ed-3218-4dd0-94b5-84444d92e1eb.png)
 ![1](https://user-images.githubusercontent.com/79772304/178369835-8b4513e1-6b04-41c4-90f8-608d387bacbb.png)
