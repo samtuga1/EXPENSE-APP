@@ -6,7 +6,7 @@ This is an expense app I built with React
 ![1](https://user-images.githubusercontent.com/79772304/178369835-8b4513e1-6b04-41c4-90f8-608d387bacbb.png)
 ![3](https://user-images.githubusercontent.com/79772304/178369851-ec740df0-9107-49d0-9203-8af6ba43920f.png)
 
-I learnt many things including:
+I learnt many things including the following:
 
 🎯 React Components
 
